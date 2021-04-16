@@ -1,0 +1,20 @@
+@keyframes caretBlinkAnimation {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.inline-input-caret {
+  position: absolute;
+  background-color: #121212;
+  animation: 1s caretBlinkAnimation step-end infinite;
+  user-select: none;
+}
+
+.inline-input-caret.stop-blink {
+  animation: none;
+}
+
+.inline-input-caret-container {
+  position: relative;
+}
